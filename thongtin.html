@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Thông Tin Cá Nhân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url(bgrthongtin.jpg);
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        label img{
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>Họ:</label>
+        <input type="text" name="ho" value="Huỳnh" required>
+        
+        <label>Tên:</label>
+        <input type="text" name="ten" value="Tuấn Anh" required>
+        
+        <label>Giới tính:</label>
+        <select name="gioitinh">
+            <option value="Nam" selected>Nam</option>
+            <option value="Nữ">Nữ</option>
+            <option value="Khác">Khác</option>
+        </select>
+        
+        <label>Năm sinh:</label>
+        <input type="text" name="namsinh" value="2006">
+        
+        <label>Quê quán:</label>
+        <input type="text" name="quequan" value="Đà Nẵng">
+        
+        <label>Trường đang học:</label>
+        <input type="text" name="truong" value="FPT POLYTECHNIC">
+        
+        <label>Mã sinh viên:</label>
+        <input type="text" name="masv" value="PD11818">
+        
+        <label>Email:</label>
+        <input type="email" name="email" value="anhtienong@gmail.com">
+        
+        <label>Số điện thoại:</label>
+        <input type="tel" name="sdt" value="0973394212">
+        
+        <label>Sở thích:</label>
+        <textarea name="sothich">Đá bóng , đọc sách ,chơi game ,du lịch ...</textarea>
+        
+        <label>Màu sắc yêu thích:</label>
+        <input type="color" name="mausac" value="#ff5733">
+        
+        <label style="text-align: center;" for="">
+            Ảnh đại diện<br><br>
+            <img src="add.jpg" width="80px">
+        </label>
+        
+        <label>Chuyên ngành:</label>
+        <input type="text" name="chuyennganh" value="Thiết kế Wed"
+        
+        <label>Ngôn ngữ lập trình đã biết:</label>
+        <input type="text" name="ngonngu" value="code C ,HTML ,Css">
+        
+        <label>Kinh nghiệm chuyên ngành:</label>
+        <textarea name="kinhnghiem">Chưa có</textarea>
+        
+        <button type="submit">Gửi thông tin</button>
+    </form>
+</body>
+</html>
